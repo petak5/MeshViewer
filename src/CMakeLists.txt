@@ -17,5 +17,5 @@ file(GLOB SOURCE_FILES *.c *.cpp)
 # or alternatively
 #set(SOURCE_FILES main.cpp glad.c)
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES} Shader.cpp include/Shader.h)
 target_link_libraries (${PROJECT_NAME} glfw)
