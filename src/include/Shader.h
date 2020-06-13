@@ -20,7 +20,7 @@ private:
 
     unsigned int LoadVertexShader(const std::string pathToShader);
     unsigned int LoadFragmentShader(const std::string pathToShader);
-    unsigned int CreateShaderProgram();
+    void CreateShaderProgram();
     std::string ReadFile(const std::string path);
 };
 

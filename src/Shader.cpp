@@ -83,7 +83,7 @@ unsigned int Shader::LoadFragmentShader(const std::string pathToShader)
     }
 }
 
-unsigned int Shader::CreateShaderProgram()
+void Shader::CreateShaderProgram()
 {
     shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
@@ -108,7 +108,7 @@ std::string Shader::ReadFile(const std::string path)
 
     if (!stream)
     {
-        std::cout << "Failed to open file `" << path << "`\n" << std::endl;
+        std::cout << "Error: failed to open file `" << path << "`\n" << std::endl;
     }
     std::string line;
 
